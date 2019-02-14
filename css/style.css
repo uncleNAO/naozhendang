@@ -81,10 +81,6 @@ Version: 1.0.2
 			border-bottom-color: transparent;
 		}
 
-	strong, b {
-		font-weight: 400;
-	}
-
 	p, ul, ol, dl, table, blockquote {
 		margin: 0 0 2rem 0;
 	}
@@ -580,6 +576,11 @@ Version: 1.0.2
 	margin: auto;
 	padding: 3rem 0;
 }
+
+.guide-box p img{
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
 /* eyebox */
 
 #eyebox{
@@ -665,6 +666,13 @@ Version: 1.0.2
 	opacity: .6
 }
 
+.sidebar-box ul li ol li ul{
+	margin: 0;
+	padding: 5px 0 5px 0px;
+	opacity: .6
+	list-style:none;
+}
+
 
 .make-box{
 	background: #fff;
@@ -682,6 +690,15 @@ Version: 1.0.2
 	text-align: left;
 	border-bottom: 1px solid #eee;
 	line-height: 200%;
+}
+
+.make-box h4{
+	text-align: left;
+	border-bottom: 1px solid #eee;
+	line-height: 200%;
+	padding-top: 1.5rem;
+	font-size: 1.2rem;
+	clear: both;
 }
 
 .app-down div{
