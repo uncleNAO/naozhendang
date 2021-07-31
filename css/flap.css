@@ -1,0 +1,569 @@
+/*
+**************************
+Author: Naozhendang
+Version: 2.0.0
+**************************
+*/
+@charset "UTF-8";
+@import url("font-awesome.min.css");
+/* Fonts */
+
+/* Gothan */
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/Gotham-Bold.otf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/Gotham-Medium.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/Gotham-Medium.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/Gotham-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/Gotham-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/Gotham-Light.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/Gotham-Light.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/Gotham-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/Gotham-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Thin';
+	src: url('../fonts/gotham-thin-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/gotham-thin-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/gotham-thin-webfont.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/gotham-thin-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gotham-thin-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: 200;
+	font-style: normal;
+}
+
+/* Basic */
+	body{
+		background-color: #FFF;
+	}
+	body, *{
+		margin:0;
+		padding: 0;
+	}
+
+	html {
+		height:100%;
+		min-height:100%;
+	}
+
+	body, input, select, textarea {
+		color: #000;
+		font-family: 'Helvetica', Arial, sans-serif;
+		font-size: 18pt;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+		a:hover {
+			border-bottom-color: transparent;
+		}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: inherit;
+		text-transform: uppercase;
+	}
+
+	p{
+		font-size: 1.1rem;
+		margin: 10px 0;
+		line-height: 150%;
+	}
+
+  section{
+    margin: 0;
+    padding: 0;
+  }
+
+  section img{
+    width: 100%;
+  }
+
+  section h2{
+    padding: 2rem 0;
+    letter-spacing: 0.2rem;
+  }
+
+  section p{
+    line-height: 150%;
+    color: #222;
+  }
+
+  .video-banner{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .video-banner h1{
+    font-size:5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    color:#FFF;
+    letter-spacing: 1.5rem;
+  }
+
+  .video-banner h1 div{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .video-banner video{
+    width: 100%;
+    z-index: -999;
+    margin: 0;
+    padding: 0;
+  }
+
+  .history{
+    display: block;
+    width: 100%;
+    position: relative;
+    background: #f4f4f4 url('../images/splitflaps.jpg') no-repeat 5vw center;
+		background-size: 45vw;
+    min-height: 600px;
+    position: relative;
+  }
+
+  .history-des{
+    width: 38vw;
+    padding: 5rem;
+    position: absolute;
+    top:0;
+    right: 0;
+  }
+
+  .flapunit{
+    background: #FFF url('../images/picflap_unit.png') no-repeat right center;
+		background-size: 60vw;
+    min-height: 600px;
+  }
+
+  .flapunit-des{
+    width: 40vw;
+    padding: 5rem;
+  }
+
+  .flapunit-des table{
+    width: 40vw;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  .flapunit-des th, .flapunit-des td{
+    padding: 0.6rem 0;
+  }
+
+  .flapunit-des td{
+    color:#666;
+  }
+
+  .eyetracking{
+    background: #FFF url('../images/picflap_coffee.png') no-repeat center top;
+		background-size: cover;
+    min-height: 700px;
+    position: relative;
+    color: #FFF;
+  }
+
+  .eyetracking-des{
+    width: 25vw;
+    padding: 5rem;
+    position: absolute;
+    top:0;
+    right: 0;
+  }
+
+  .eyetracking-des p{
+    color: #FFF;
+  }
+
+  .modular{
+    background: #FFF url('../images/picflap_modular.png') no-repeat center center;
+		background-size: cover;
+    min-height: 700px;
+    position: relative;
+    color: #FFF;
+  }
+
+  .modular-des{
+    width: 25vw;
+    padding: 5rem;
+    position: absolute;
+    bottom:0;
+    left: 0;
+  }
+
+  .modular-des p{
+    color: #FFF;
+  }
+
+  .replace{
+    background: #FFF url('../images/picflap_replace.png') no-repeat center center;
+		background-size: cover;
+    min-height: 700px;
+    position: relative;
+  }
+
+  .replace-des{
+    width: 20vw;
+    padding: 5rem;
+  }
+
+  .safty{
+    background: #FFF url('../images/picflap_pcb.png') no-repeat center center;
+		background-size: cover;
+    min-height: 700px;
+    position: relative;
+    color: #FFF;
+  }
+
+  .safty-des{
+    width: 25vw;
+    padding: 5rem;
+    position: absolute;
+    top:0;
+    right: 0;
+  }
+
+  .safty-des p{
+    color: #FFF;
+  }
+
+  .contact{
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+  .contact-des{
+    width: 60vw;
+    padding: 5rem;
+    margin: auto;
+  }
+
+  .contact-des .email{
+    padding: 3rem 0;
+  }
+
+  .contact-des .email a{
+    padding:1rem 2rem;
+    font-size: 2rem;
+    border: 4px solid #222;
+    color:#222;
+    font-weight: 700;
+  }
+  /* SubHeader */
+
+#subheader {
+	color: #fff;
+	width: 100vw;
+	margin:0 auto;
+	padding: 2rem 0;
+	-moz-transition: top 0.5s;
+	-webkit-transition: top 0.5s;
+	-o-transition: top 0.5s;
+	-ms-transition: top 0.5s;
+	transition: top 0.5s;
+	position: fixed;
+	top:0;
+	left:0;
+	background: #222;
+	z-index: 9;
+}
+
+#subheader h1{
+	display: inline-flex;
+	width: 200px;
+	padding: 1.5rem 0 0;
+	margin-left: 5vw;
+	float: left;
+}
+
+.subheader h1 img{
+	width: 100%;
+}
+
+
+.subheader nav {
+	display: inline-flex;
+	float: right;
+	text-align:left;
+	margin-right: 5vw;
+	font-family: 'Gotham','Helvetica', Arial, sans-serif;
+}
+
+.subheader nav ul {
+	margin:0;
+	padding: 0;
+}
+
+	#subheader nav ul li {
+		display: inline-flex;
+		margin:2rem 0 2rem 2rem;
+		color:#0995ff;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 1.2rem;
+		font-weight: 500;
+		letter-spacing: 0.4rem;
+	}
+
+		#subheader nav ul li a {
+			color:#fafafa;
+			display: inline-block;
+			padding: 0;
+		}
+
+		#subheader nav ul li.active > a, #subheader nav ul li:hover > a {
+			-moz-transition: all 0.3s ease-in-out;
+			-webkit-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			color:#0995ff;
+		}
+
+    #drop-down-btn{
+      display: inline-flex;
+      position: fixed;
+      top:45px;
+      right: 4vw;
+      visibility: hidden;
+    }
+    
+    #drop-down-btn a{
+      font-size:2rem;
+      padding:1rem;
+      cursor: pointer;
+      color: #0995FF;
+    }
+    
+    @media screen and (max-width: 980px) {
+      body{
+        font-size: 80% !important;
+      }
+
+      .video-banner{
+        margin: 100px 0 0;
+      }
+      .subheader nav {
+        float:right;
+        clear: both;
+      }
+      #subheader nav ul li {
+        display: block;
+        margin:2rem 0;
+        text-align: right;
+      }
+    
+      #subheader nav ul li a{
+        text-align: right;
+      }
+    
+      #drop-down-btn{
+        visibility: visible;
+      }
+    
+      .video-banner h1{
+        font-size:2.5rem;
+        letter-spacing: 0.5rem;
+      }
+
+      .video-banner h1 div{
+        font-size: 1rem;
+      }
+
+      .history{
+        background: #f4f4f4;
+      }
+    
+      .history-des{
+        width: 80vw;
+        margin: auto;
+        padding: 5rem 0;
+        position: relative;
+      }
+
+      .contact-des .email a{
+        font-size: 1rem;
+      }
+    
+    }
+
+    @media screen and (max-width: 480px) {
+      .flapunit{
+        background: #FFF;
+        min-height: 350px;
+      }
+    
+      .flapunit-des{
+        width: 90vw;
+        padding: 5vw;
+      }
+    
+      .flapunit-des table{
+        width: auto;
+        font-size: 1rem;
+      }
+    
+      .flapunit-des th, .flapunit-des td{
+        padding: 0.2rem 0;
+      }
+    
+      .flapunit-des td{
+        color:#666;
+      }
+
+      .eyetracking-des{
+        width: 60vw;
+        top: 40%;
+        color: #222;
+      }
+
+      .eyetracking-des p{
+        color: #222;
+      }
+
+      .replace-des{
+        width: 60vw;
+        position: absolute;
+        left:0;
+        bottom: 0;
+        color: #FFF;
+      }
+
+      .replace-des p{
+        color: #FFF;
+      }
+
+      .modular-des{
+        width: 60vw;
+      }
+
+      .safty-des{
+        width: 60vw;
+      }
+
+    }
+
+    /* Footer */
+    .sub-footer{
+      font-size: 1rem;
+      padding: 2rem 0;
+      margin: 0;
+      clear:both;
+      text-align: center;
+      color: #666;
+      background: #fafafa;
+    }
+  
+    .sub-footer a{
+      font-size: 1rem;
+      color: #666;
+    }
+  
+    .sub-footer a:hover{
+      -moz-transition: opacity 0.3s ease-in-out;
+      -webkit-transition: opacity 0.3s ease-in-out;
+      -o-transition: opacity 0.3s ease-in-out;
+      -ms-transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out;
+      opacity:0.6;
+    }
+  
+    .sub-footer nav{
+      padding:2rem 0;
+    }
+  
+    .sub-footer nav ul ,.sub-footer ul.links{
+      list-style: none;
+    }
+  
+    .sub-footer nav ul li{
+      display: inline-block;
+    }
+  
+    .sub-footer nav ul li a{
+      font-size: 1.8rem;
+      margin:0 1rem;
+    }
+  
+    .sub-footer ul.links li a{
+      font-size: 0.8rem;
+      line-height: 150%;
+    }
+  
+    .sub-footer nav ul li.li-zhihu a{
+      display: block;
+    }
+    
+    .sub-footer nav ul li.li-zhihu a img{
+      height: 28px;
+    }
+  
+    .sub-footer nav ul li.li-bili a{
+      display: block;
+    }
+    
+    .sub-footer nav ul li.li-bili a img{
+      width: 28px;
+    }
+  
+  
+    .sub-footer nav ul li.li-weixin{
+      position: relative;
+    }
+  
+    .sub-footer nav ul li.li-weixin:hover .weixin{
+      position: absolute;
+      top:-210px;
+      left: -90px;
+      display: block;
+      width: 200px;
+      height: 200px;
+      box-shadow: 0 1px 3px rgba(26,26,26,.1);
+      box-sizing: border-box;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  
+    .sub-footer nav ul li.li-weixin .weixin{
+      display: none;
+    }
+  
+    .sub-footer nav ul li.li-weixin .weixin img{
+      width: 100%;
+    }

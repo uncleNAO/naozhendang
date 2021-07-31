@@ -1,41 +1,42 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>眼球盒子机械电子套件 | 脑震荡</title>
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<title>眼球盒子机械电子套件 - 脑震荡 | 一本正经地玩的装置艺术团队</title>
+		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="眼球盒子是一款集知识和趣味为一体的DIY科学玩具，它的设计灵感来源于风靡好莱坞的电子动画特效技术(Animatronics), 即利用机械传动和电子控制等手段，制作电影所需要的机器人、动物和怪兽等角色的技术。眼球盒子以经典的眼球控制模型为载体，用详细的分解步骤和深入浅出的原理介绍，让拼装者在动手组装的过程中学到相关的机械和电子知识，享受手作的乐趣和创意的激荡！" />
+		<meta name="keywords" content="脑震荡,电子套件,机械眼球,眼球盒子,Eyeball Kit,Animatronics,DIY套件"/>
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
-		<script src="js/main.js"></script>
-		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+		<link rel="stylesheet" href="../css/style.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 	</head>
-	<body class="index">
+	<body>
 			<!-- Header -->
-			<header id="header" class="header">
+			<header id="subheader" class="subheader">
 				<div class="row">
-					<h1><a href="index.html"><img src="images/ndz_logo_main.svg"/></a></h1>
-					<nav>
+          <h1><img src="../images/ndz_logo_inner.svg"/></h1>
+					<nav v-if="seen">
 						<ul>
-							<li><a href="eyeball.html" title="眼球盒子">眼球盒子</a></li>
-							<li><a href="https://zhuanlan.zhihu.com/naozhendang" title="知乎专栏" target="_blank">知乎专栏</a></li>
-							<li class="li-weixin"><a href="javascript:void(0);" title="微信公众号">微信公众号</a><div class='weixin'><img src='images/weixin-qr.jpg' /></div></li>
-							<li><a href="https://space.bilibili.com/1977681">B站</a></li>
-							<li><a href="http://naozhendang.taobao.com" title="小卖部" target="_blank">小卖部</a></li>
+							<li><a href="../index.html">首页</a></li>
+							<li>作品案例</li>
+							<li><a href="../splitflap.html">机械翻页屏</a></li>
+							<li><a href="../about.html">关于我们</a></li>
+							<li><a href="../contact.html">合作联系</a></li>
 						</ul>
 					</nav>
+					<div id="drop-down-btn"><a href="javascript:void(0);" v-on:click="toggleDrop"><i class="fa fa-bars"></i></a></div>
 				</div>
 			</header>
 			<!-- Kit -->
 			<section class="kitpage content">
-
+				<div class="navbar"><a href="../projects.html">作品案例</a> > 眼球盒子机械电子套件</div>
 				<div class="kit-eyebox">
 					<div class="kit-box">
-						<h2><span><img src="images/eyebox_logo.svg" /></span>机械电子套件</h2>
+						<h2><span><img src="../images/eyebox_logo.svg" /></span>机械电子套件</h2>
 						<div class="kit-desc">眼球盒子是一款集知识和趣味为一体的DIY科学玩具，它的设计灵感来源于风靡好莱坞的电子动画特效技术(Animatronics), 即利用机械传动和电子控制等手段，制作电影所需要的机器人、动物和怪兽等角色的技术。眼球盒子以经典的眼球控制模型为载体，用详细的分解步骤和深入浅出的原理介绍，让拼装者在动手组装的过程中学到相关的机械和电子知识，享受手作的乐趣和创意的激荡！</div>
 						<div>
 							<button><a class="buy" href="https://item.taobao.com/item.htm?id=577310099529" target="_blank">立即购买</a></button>
@@ -43,17 +44,17 @@
 					</div>
 				</div>
 				<div>
-					<img src="images/eyeball_01.jpg" />
+					<img src="../images/eyeball_01.jpg" />
 				</div>
 
 				<div class="kit-banner kit-col">
 						<h3>一款致敬Animatronics的DIY科学玩具</h3>
 						<div class="h3-desc">眼球盒子是一款集知识和趣味为一体的DIY科学玩具，它的设计灵感来源于风靡好莱坞的电子动画特效技术(Animatronics), <br/>即利用机械传动和电子控制等手段，制作电影所需要的机器人、动物和怪兽等角色的技术。</div>
-						<div class="eyebox-show"><img src="images/eyebox_whitebg.jpg"/></div>
+						<div class="eyebox-show"><img src="../images/eyebox_whitebg.jpg"/></div>
 						<section class="eyebox-features">
-							<div class="split-content-3"><div class="step-img"><img src="images/step1.jpg"/></div><span>1</span><h5>动手组装</h5></div>
-							<div class="split-content-3"><div class="step-img"><img src="images/step2.jpg"/></div><span>2</span><h5>连接控制</h5></div>
-							<div class="split-content-3"><div class="step-img"><img src="images/step3.jpg"/></div><span>3</span><h5>释放创造力</h5></div>
+							<div class="split-content-3"><div class="step-img"><img src="../images/step1.jpg"/></div><span>1</span><h5>动手组装</h5></div>
+							<div class="split-content-3"><div class="step-img"><img src="../images/step2.jpg"/></div><span>2</span><h5>连接控制</h5></div>
+							<div class="split-content-3"><div class="step-img"><img src="../images/step3.jpg"/></div><span>3</span><h5>释放创造力</h5></div>
 						</section>
 				</div>
 				<div class="eyebox-easyui kit-col">
@@ -171,18 +172,20 @@
 			</section>
 
 			<!-- Footer -->
-			<footer>
-				<div class="footbar">
+			<footer class="sub-footer">
+        <div class="footbar">
 					<nav>
 						<ul class="social-links">
-		          <li><a href="mailto:support@naozhendang.com"><i class="fa fa-envelope-o"></i></a></li>
-							<li><a href="https://github.com/naozhendang"><i class="fa fa-github-alt"></i></a></li>
-		          <li><a href="http://www.weibo.com/naozhendang"><i class="fa fa-weibo"></i></a></li>
-		          <li class="li-weixin"><a href="javascript:void(0);"><i class="fa fa-weixin"></i></a><div class='weixin'><img src='images/weixin-qr.jpg' /></div></li>
-		        </ul>
+							<li><a href="mailto:support@naozhendang.com" title="Email"><i class="fa fa-envelope-o"></i></a></li>
+							<li class="li-weixin"><a href="javascript:void(0);" title="微信公众号"><i class="fa fa-weixin"></i></a><div class='weixin'><img src="../images/weixin-qr.jpg" /></div></li>
+							<li class="li-bili"><a href="https://space.bilibili.com/1977681" title="B站"><img src="../images/bilibili2.svg"/></a></li>
+							<li class="li-zhihu"><a href="https://zhuanlan.zhihu.com/naozhendang" title="知乎专栏"><img src="../images/zhihu2.svg"/></a></li>
+							<li><a href="http://www.weibo.com/naozhendang" title="新浪微博"><i class="fa fa-weibo"></i></a></li>
+						</ul>
 					</nav>
 				</div>
-				<div class="copyright">&copy; 2021 脑震荡版权所有</div>
+				<div class="copyright">&copy; Copyright 2021, 脑震荡. All Right Reserved</div>
 			</footer>
+			<script src="../js/main.js"></script>
 	</body>
 </html>

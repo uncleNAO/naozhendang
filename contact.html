@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>脑震荡 | 一本正经地玩的装置艺术团队</title>
+		<title>合作联系 - 脑震荡 | 一本正经地玩的装置艺术团队</title>
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -9,47 +9,58 @@
 		<meta name="keywords" content="脑震荡,装置艺术,动态装置,Kinetic Art,机械翻页屏,翻页矩阵屏,图片翻页屏,眼球立方"/>
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 		<link rel="stylesheet" href="css/style.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 	</head>
-	<body class="index">
-			<!-- Background Video-->
-			<video id="videobg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-				<source src="http://d.naozhendang.com/showreel.mp4" type="video/mp4">
-				Sorry, your browser does not support HTML5 video.
-			</video>
+	<body>
 			<!-- Header -->
-			<header id="header" class="header">
+			<header id="subheader" class="subheader">
 				<div class="row">
-					<h1><img src="images/ndz_logo_main.svg"/></h1>
-					<nav>
+          <h1><img src="images/ndz_logo_inner.svg"/></h1>
+					<nav v-if="seen">
 						<ul>
-							<li>首页</li>
+							<li><a href="index.html">首页</a></li>
 							<li><a href="projects.html">作品案例</a></li>
 							<li><a href="splitflap.html">机械翻页屏</a></li>
 							<li><a href="about.html">关于我们</a></li>
-							<li><a href="contact.html">合作联系</a></li>
+							<li>合作联系</li>
 						</ul>
 					</nav>
 					<div id="drop-down-btn"><a href="javascript:void(0);" v-on:click="toggleDrop"><i class="fa fa-bars"></i></a></div>
 				</div>
 			</header>
 
+      <section id="contact">
+				<article>
+          <h2>合作联系</h2>
+					<div class="contact-des">
+            <p>关于装置定制、品牌合作、展览活动、媒体报道等， 欢迎通过以下方式联系我们：</p>
+            <p><strong>官方Email:</strong> <a href="mailto:hello@naozhendang.com">hello@naozhendang.com</a></p>
+            <p><strong>微信公众号:</strong> @脑震荡(nzd_news)</p>
+            <p><strong>BiliBili:</strong> <a href="https://space.bilibili.com/1977681" title="B站">https://space.bilibili.com/1977681</a></p>
+            <p><strong>知乎专栏:</strong> <a href="https://zhuanlan.zhihu.com/naozhendang" title="知乎专栏">https://zhuanlan.zhihu.com/naozhendang</a></p>
+            <p><strong>新浪微博:</strong> <a href="http://www.weibo.com/naozhendang" title="新浪微博">http://www.weibo.com/naozhendang</a></p>
+					</div>
+				</article>
+			</section>
+
 			<!-- Footer -->
-			<footer class="main-footer">
-				<div class="footbar">
+			<footer class="sub-footer">
+        <div class="footbar">
 					<nav>
 						<ul class="social-links">
 							<li><a href="mailto:support@naozhendang.com" title="Email"><i class="fa fa-envelope-o"></i></a></li>
 							<li class="li-weixin"><a href="javascript:void(0);" title="微信公众号"><i class="fa fa-weixin"></i></a><div class='weixin'><img src='images/weixin-qr.jpg' /></div></li>
-							<li class="li-bili"><a href="https://space.bilibili.com/1977681" title="B站"><img src="images/bilibili.svg"/></a></li>
-							<li class="li-zhihu"><a href="https://zhuanlan.zhihu.com/naozhendang" title="知乎专栏"><img src="images/zhihu.svg"/></a></li>
+							<li class="li-bili"><a href="https://space.bilibili.com/1977681" title="B站"><img src="images/bilibili2.svg"/></a></li>
+							<li class="li-zhihu"><a href="https://zhuanlan.zhihu.com/naozhendang" title="知乎专栏"><img src="images/zhihu2.svg"/></a></li>
 							<li><a href="http://www.weibo.com/naozhendang" title="新浪微博"><i class="fa fa-weibo"></i></a></li>
 						</ul>
 					</nav>
 				</div>
 				<div class="copyright">&copy; Copyright 2021, 脑震荡. All Right Reserved</div>
 			</footer>
+			<script src="js/main.js"></script>
 	</body>
 </html>

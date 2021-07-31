@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Eyeballz - 脑震荡 | 一本正经地玩的装置艺术团队</title>
+		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Eyeballz眼球动态交互装置 由一组大小不一情态各异的竖立眼球组成，好似从幻想世界里走出来的奇异生物。Eyeballz通过摄像头捕捉人体运动，当行人出现在眼球视野范围之内时，它们会跟随人的移动而移动，形成一直在看你的效果。" />
+    <meta name="keywords" content="脑震荡,眼球立方,机械眼球,眼球,互动装置,视觉追踪,Eyeballz"/>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+		<link rel="stylesheet" href="../css/style.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body>
+    <!-- Header -->
+    <header id="subheader" class="subheader">
+      <div class="row">
+        <h1><img src="../images/ndz_logo_inner.svg"/></h1>
+        <nav v-if="seen">
+          <ul>
+            <li><a href="../index.html">首页</a></li>
+            <li>作品案例</li>
+            <li><a href="../splitflap.html">机械翻页屏</a></li>
+            <li><a href="../about.html">关于我们</a></li>
+            <li><a href="../contact.html">合作联系</a></li>
+          </ul>
+        </nav>
+        <div id="drop-down-btn"><a href="javascript:void(0);" v-on:click="toggleDrop"><i class="fa fa-bars"></i></a></div>
+      </div>
+    </header>
+
+    <section class="projectpage">
+      <div class="navbar"><a href="../projects.html">作品案例</a> > Eyeballz</div>
+      <article>
+        <h2>Eyeballz</h2>
+        <video controls="controls" preload="auto" poster="../images/eyeballz.jpg">
+          <source src="https://video.manamana.net/-jlZbOPR-scwWNcLP_i_iE8L7Sc=/llziQU6pIXuSsJL9SKiXlG_ROEgf" type="video/mp4">
+          Sorry, your browser does not support HTML5 video.
+        </video>
+        <div class="project-des">
+          <p class="case-info">Eyeballz, 2018</p>
+          <p>Eyeballz 眼球动态交互装置 由一组大小不一情态各异的竖立眼球组成，好似从幻想世界里走出来的奇异生物。Eyeballz通过摄像头捕捉人体运动，当行人出现在眼球视野范围之内时，它们会跟随人的移动而移动，形成“一直在看你”的效果。</p>
+          <p><img src="../images/eyeballz/eyeballz01-2000px.jpg" /></p>
+					<p><img src="../images/eyeballz/eyeballz02-2000px.jpg" /></p>
+					<p><img src="../images/eyeballz/eyeballz03-2000px.jpg" /></p>
+					<p><img src="../images/eyeballz/eyeballz04-2000px.jpg" /></p>
+					<p><img src="../images/eyeballz/eyeballz05-2000px.jpg" /></p>     
+      </div>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="sub-footer">
+      <div class="footbar">
+        <nav>
+          <ul class="social-links">
+            <li><a href="mailto:support@naozhendang.com" title="Email"><i class="fa fa-envelope-o"></i></a></li>
+            <li class="li-weixin"><a href="javascript:void(0);" title="微信公众号"><i class="fa fa-weixin"></i></a><div class='weixin'><img src="../images/weixin-qr.jpg" /></div></li>
+            <li class="li-bili"><a href="https://space.bilibili.com/1977681" title="B站"><img src="../images/bilibili2.svg"/></a></li>
+            <li class="li-zhihu"><a href="https://zhuanlan.zhihu.com/naozhendang" title="知乎专栏"><img src="../images/zhihu2.svg"/></a></li>
+            <li><a href="http://www.weibo.com/naozhendang" title="新浪微博"><i class="fa fa-weibo"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="copyright">&copy; Copyright 2021, 脑震荡. All Right Reserved</div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

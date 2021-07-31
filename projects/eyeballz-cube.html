@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>眼球立方 - 脑震荡 | 一本正经地玩的装置艺术团队</title>
+		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="眼球立方是一个模块化的动态艺术装置，模块化的设计使得它能以灵活的排列组合占据不同类型的空间。每个眼球立方独立而随机地运动，正如我们每个人的注意力随时随地被不同事物所吸引。当许许多多个眼球立方层叠在一起时，它们快速而稍显混乱的运动呈现了一种无序的美感，正如我们充斥着喧嚣与繁杂的社会。眼球立方也可以拓展成具有交互功能的动态装置。通过配备摄像头和定制软件，眼球立方可以随着人体的运动而运动，形成一直在看你的效果。" />
+    <meta name="keywords" content="脑震荡,眼球立方,机械眼球,眼球,互动装置,视觉追踪,Eyeball"/>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+		<link rel="stylesheet" href="../css/style.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body>
+    <!-- Header -->
+    <header id="subheader" class="subheader">
+      <div class="row">
+        <h1><img src="../images/ndz_logo_inner.svg"/></h1>
+        <nav v-if="seen">
+          <ul>
+            <li><a href="../index.html">首页</a></li>
+            <li>作品案例</li>
+            <li><a href="../splitflap.html">机械翻页屏</a></li>
+            <li><a href="../about.html">关于我们</a></li>
+            <li><a href="../contact.html">合作联系</a></li>
+          </ul>
+        </nav>
+        <div id="drop-down-btn"><a href="javascript:void(0);" v-on:click="toggleDrop"><i class="fa fa-bars"></i></a></div>
+      </div>
+    </header>
+
+    <section class="projectpage">
+      <div class="navbar"><a href="../projects.html">作品案例</a> > 眼球立方</div>
+      <article>
+        <h2>Eyeballz Cube / 眼球立方</h2>
+        <video controls="controls" preload="auto" poster="../images/eyeballz_cube.jpg">
+          <source src="https://video.manamana.net/-jlZbOPR-scwWNcLP_i_iE8L7Sc=/lidAM-ZxRMVxeMh-Qi89cqhKbY2t" type="video/mp4">
+          Sorry, your browser does not support HTML5 video.
+        </video>
+        <div class="project-des">
+          <p class="case-info">眼球立方(Eyeballz Cube), 2018</p>
+          <p>眼球立方是一个模块化的动态艺术装置，模块化的设计使得它能以灵活的排列组合占据不同类型的空间。每个眼球立方独立而随机地运动，正如我们每个人的注意力随时随地被不同事物所吸引。当许许多多个眼球立方层叠在一起时，它们快速而稍显混乱的运动呈现了一种无序的美感，正如我们充斥着喧嚣与繁杂的社会。</p>
+          <p>眼球立方也可以拓展成具有交互功能的动态装置。通过配备摄像头和定制软件，眼球立方可以随着人体的运动而运动，形成“一直在看你”的效果。</p>
+          <p><img src="../images/eyeballz-cube/eyeballz-cube01.jpg" /></p>
+          <p><img src="../images/eyeballz-cube/eyeballz-cube02.jpg" /></p>
+          <p><img src="../images/eyeballz-cube/eyeballz-cube03.jpg" /></p>
+          <p><img src="../images/eyeballz-cube/eyeballz-cube04.jpg" /></p>
+          <p><img src="../images/eyeballz-cube/eyeballz-cube05.jpg" /></p>
+          <p><img src="../images/eyeballz-cube/eyeballz-cube06.jpg" /></p>      
+      </div>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="sub-footer">
+      <div class="footbar">
+        <nav>
+          <ul class="social-links">
+            <li><a href="mailto:support@naozhendang.com" title="Email"><i class="fa fa-envelope-o"></i></a></li>
+            <li class="li-weixin"><a href="javascript:void(0);" title="微信公众号"><i class="fa fa-weixin"></i></a><div class='weixin'><img src="../images/weixin-qr.jpg" /></div></li>
+            <li class="li-bili"><a href="https://space.bilibili.com/1977681" title="B站"><img src="../images/bilibili2.svg"/></a></li>
+            <li class="li-zhihu"><a href="https://zhuanlan.zhihu.com/naozhendang" title="知乎专栏"><img src="../images/zhihu2.svg"/></a></li>
+            <li><a href="http://www.weibo.com/naozhendang" title="新浪微博"><i class="fa fa-weibo"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="copyright">&copy; Copyright 2021, 脑震荡. All Right Reserved</div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
