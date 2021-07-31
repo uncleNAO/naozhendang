@@ -256,7 +256,7 @@ Version: 2.0.0
 	}
 	
 	ul.projects li.image_flap{
-		background: #FFF url('../images/image_flap.jpg') no-repeat center center;
+		background: #FFF url('../images/image_flap.JPG') no-repeat center center;
 		background-size: cover;
 	}
 	
