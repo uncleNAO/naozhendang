@@ -163,7 +163,7 @@ Version: 2.0.0
   }
 
   .flapunit{
-    background: #FFF url('../images/picflap_unit.png') no-repeat right center;
+    background: #FFF url('../images/picflap_unit.jpg') no-repeat right center;
 		background-size: 60vw;
     min-height: 600px;
   }
@@ -190,7 +190,7 @@ Version: 2.0.0
   }
 
   .eyetracking{
-    background: #FFF url('../images/picflap_coffee.png') no-repeat center top;
+    background: #FFF url('../images/picflap_coffee.jpg') no-repeat center top;
 		background-size: cover;
     min-height: 700px;
     position: relative;
@@ -210,7 +210,7 @@ Version: 2.0.0
   }
 
   .modular{
-    background: #FFF url('../images/picflap_modular.png') no-repeat center center;
+    background: #FFF url('../images/picflap_modular.jpg') no-repeat center center;
 		background-size: cover;
     min-height: 700px;
     position: relative;
@@ -230,7 +230,7 @@ Version: 2.0.0
   }
 
   .replace{
-    background: #FFF url('../images/picflap_replace.png') no-repeat center center;
+    background: #FFF url('../images/picflap_replace.jpg') no-repeat center center;
 		background-size: cover;
     min-height: 700px;
     position: relative;
@@ -242,7 +242,7 @@ Version: 2.0.0
   }
 
   .safty{
-    background: #FFF url('../images/picflap_pcb.png') no-repeat center center;
+    background: #FFF url('../images/picflap_pcb.jpg') no-repeat center center;
 		background-size: cover;
     min-height: 700px;
     position: relative;
